@@ -1,0 +1,49 @@
+@import "materialize";
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+     
+  .btn-devise{
+  	width: 100%;
+  }
+
+  .show-title{
+    margin-top: 0;
+    font-size: 3.4em;
+  }
+
+  .show-img{
+    padding-right: 5%;
+}
+
+  .show-prezzo{
+    font-size: 2em;
+}
+
+.btn-form{
+  width: 100%;
+}
+
+.card-image{
+  height: 150px;
+}
+
+.pagination a li.active {
+  color: #fff;
+}
+.class-logo{
+  margin-top: 5px;
+  margin-right: 3px;
+  background-color: #000;
+}
