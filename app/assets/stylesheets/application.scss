@@ -46,14 +46,15 @@
   width: 100%;
 }
 
-.card-image{
+.card-image {
   height: 150px;
 }
 
 .pagination a li.active {
   color: #fff;
 }
-.class-logo{
+
+.class-logo {
   margin-top: 5px;
   margin-right: 3px;
   background-color: #000;
@@ -67,8 +68,10 @@
   .fa-social{
     padding: 0 10%;
   }
+
+  .vi-logo{
+  margin-left: 50px;
+}
 }
 
-.vi-logo{
-  padding: 0 0 0 10%;
-}
+
