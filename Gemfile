@@ -31,6 +31,8 @@ gem 'aasm'
 
 gem 'aws-sdk', '~> 2.3'
 
+gem 'font-awesome-sass'
+
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
