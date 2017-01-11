@@ -9,7 +9,17 @@
 	      <ul class="right hide-on-med-and-down">
 	      <li><%= link_to 'Vendi contenuto', new_content_path %></li>
 	    		<% if user_signed_in? %>
-	    			<li><%= link_to "Esci", destroy_user_session_path, method: :delete %></li>
+
+						<!-- Dropdown Structure -->
+						<ul id="dropdown1" class="dropdown-content">
+						  <li><%= link_to "Dashboard", dashboard_path %></li>
+						  <li><%= link_to "Impostazioni", edit_user_registration_path %></li>
+						  <li><%= link_to "Vai ai contenuti", contents_path %></li>
+						  <li class="divider"></li>
+	    				<li><%= link_to "Esci", destroy_user_session_path, method: :delete %></li>
+						</ul>
+						<li><a class="dropdown-button" href="#!" data-activates="dropdown1"><%= current_user.name %><i class="material-icons right">arrow_drop_down</i></a></li>	  
+
 	    		<% else %>
 	    			<li><%= link_to "Log in",  new_user_session_path %></li>	 	  
 	    			<li><%= link_to "Registrazione",  new_user_registration_path %></li>
@@ -17,13 +27,21 @@
 	      	
 	      </ul>
 	      <ul class="side-nav" id="mobile-demo">
-	      	<li><%= link_to 'Vendi contenuto', new_content_path %></li>
+	      <li><%= link_to 'Vendi contenuto', new_content_path %></li>
 	    		<% if user_signed_in? %>
-	    			<li><%= link_to "Esci", destroy_user_session_path, method: :delete %></li>
+
+						<!-- Dropdown Structure -->
+					
+						  <li><%= link_to "Dashboard", dashboard_path %></li>
+						  <li><%= link_to "Impostazioni", edit_user_registration_path %></li>
+						  <li><%= link_to "Vai ai contenuti", contents_path %></li>
+						  <li class="divider"></li>
+	    				<li><%= link_to "Esci", destroy_user_session_path, method: :delete %></li>
+							<li><%= current_user.name %></li>	  
 	    		<% else %>
-	    			<li><%= link_to "Log in",  new_user_session_path %></li>	 	      
+	    			<li><%= link_to "Log in",  new_user_session_path %></li>	 	  
 	    			<li><%= link_to "Registrazione",  new_user_registration_path %></li>
-	    		<% end %>	      	
+	    		<% end %>    	
 
 	      </ul>
 	    </div>
