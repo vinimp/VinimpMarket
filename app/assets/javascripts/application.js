@@ -15,6 +15,3 @@
 //= require jquery_ujs
 //= require turbolinks
 
-	$(document).ready(function(){
-		$(".dropdown-button").dropdown();
-	});
